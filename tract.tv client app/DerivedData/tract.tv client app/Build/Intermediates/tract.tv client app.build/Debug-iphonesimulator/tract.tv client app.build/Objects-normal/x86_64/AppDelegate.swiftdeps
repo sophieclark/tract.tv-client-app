@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C19tract_tv_client_app11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "window"
 - "applicationWillEnterForeground"
-- "application"
 - "applicationDidBecomeActive"
+- "window"
 - "applicationWillResignActive"
 - "applicationWillTerminate"
+- "application"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIApplicationLaunchOptionsKey"
-- "Bool"
 - !private "BooleanLiteralType"
-- "UIResponder"
-- "AppDelegate"
-- "UIApplication"
-- "UIApplicationDelegate"
 - "UIWindow"
+- "Bool"
+- "UIApplication"
+- "UIResponder"
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -258,4 +258,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
 interface-hash: "7e85a999868267b7cde0941f4dd635ac"
