@@ -1,9 +1,9 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
 options: "cb0172cc021973dea630f20925cedb37"
-build_time: [530198139, 601776000]
+build_time: [530200469, 724218000]
 inputs:
-  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/MovieTableViewCell.swift": [530195123, 0]
-  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/MovieTableViewController.swift": [530197962, 0]
-  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/TractTvService.swift": [530197939, 0]
-  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/Movie.swift": [530197133, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/MovieTableViewCell.swift": [530200468, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/MovieTableViewController.swift": [530200468, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/TractTvService.swift": [530200468, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/Movie.swift": [530200468, 0]
   "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/AppDelegate.swift": [530182514, 0]

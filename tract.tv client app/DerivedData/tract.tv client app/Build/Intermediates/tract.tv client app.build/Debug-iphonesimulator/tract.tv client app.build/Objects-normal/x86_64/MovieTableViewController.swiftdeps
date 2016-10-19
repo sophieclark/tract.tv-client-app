@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C19tract_tv_client_app24MovieTableViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSections"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "tableView"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "numberOfSections"
 depends-top-level:
-- "MovieTableViewController"
-- "UITableViewController"
-- "UITableView"
-- !private "TractTvService"
-- !private "print"
 - "Int"
+- !private "print"
+- "UITableViewController"
+- !private "TractTvService"
+- "MovieTableViewController"
+- "UITableView"
 depends-member:
 - !private ["Ps9AnyObject", "TractTvService"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

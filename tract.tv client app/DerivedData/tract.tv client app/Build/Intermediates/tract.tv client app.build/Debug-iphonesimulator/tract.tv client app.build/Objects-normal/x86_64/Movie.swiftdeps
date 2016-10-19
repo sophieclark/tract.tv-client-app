@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "JSON"
-- "FloatLiteralType"
-- "String"
 - "Int"
-- "IntegerLiteralType"
-- "AssignmentPrecedence"
-- "Movie"
 - "StringLiteralType"
+- "Movie"
+- "String"
+- "AssignmentPrecedence"
+- "IntegerLiteralType"
+- "FloatLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "Movie"]
 - !private ["Ps9AnyObject", "imdb"]

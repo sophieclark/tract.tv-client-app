@@ -7,21 +7,21 @@ provides-member:
 - ["C19tract_tv_client_app14TractTvService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Dictionary"
-- "AssignmentPrecedence"
-- !private "String"
-- "CastingPrecedence"
-- !private "Alamofire"
-- !private "JSON"
-- !private "+"
-- "Error"
-- !private "UnicodeScalarType"
 - "Movie"
-- "Void"
-- !private "AnyObject"
-- "TractTvService"
-- "StringLiteralType"
+- !private "Dictionary"
 - !private "print"
+- !private "+"
+- "StringLiteralType"
+- "TractTvService"
+- "Error"
+- !private "Alamofire"
+- "Void"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "AnyObject"
+- !private "UnicodeScalarType"
+- !private "JSON"
+- !private "String"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "AnyObject"]

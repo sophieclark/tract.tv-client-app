@@ -6,12 +6,12 @@ provides-nominal:
 provides-member:
 - ["C19tract_tv_client_app18MovieTableViewCell", ""]
 provides-dynamic-lookup:
-- "setSelected"
 - "awakeFromNib"
+- "setSelected"
 depends-top-level:
-- "MovieTableViewCell"
-- "Bool"
 - "UITableViewCell"
+- "Bool"
+- "MovieTableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "init"]
