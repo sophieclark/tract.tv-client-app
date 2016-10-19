@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, ’10.0’
+
+target 'tract.tv client app' do
+  use_frameworks!
+
+  # Pods for tract.tv client app
+  pod 'Alamofire', '~> 4.0'
+  pod 'SwiftyJSON'
+  pod 'AlamofireImage', '~> 3.1'
+
+  target 'tract.tv client appTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'tract.tv client appUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

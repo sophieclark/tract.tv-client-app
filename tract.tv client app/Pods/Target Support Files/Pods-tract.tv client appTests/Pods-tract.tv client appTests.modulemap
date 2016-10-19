@@ -1,0 +1,6 @@
+framework module Pods_tract_tv_client_appTests {
+  umbrella header "Pods-tract.tv client appTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

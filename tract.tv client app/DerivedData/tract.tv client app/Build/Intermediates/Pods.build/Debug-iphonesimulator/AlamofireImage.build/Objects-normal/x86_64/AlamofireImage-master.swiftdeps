@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "22ce3b6fe730b700d44c6b7cd21d18fc"
+build_time: [530198138, 697984000]
+inputs:
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/AFIError.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/Image.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/ImageCache.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/ImageDownloader.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/ImageFilter.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [530198131, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [530198131, 0]
