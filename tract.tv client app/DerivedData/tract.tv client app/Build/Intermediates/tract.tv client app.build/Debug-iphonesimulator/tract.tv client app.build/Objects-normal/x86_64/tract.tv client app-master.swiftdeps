@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "c2a10f07b99d467b4b84e1c591e1a2aa"
+build_time: [530182517, 215538000]
+inputs:
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/ViewController.swift": [530182514, 0]
+  "/Users/c2057175/tract.tv-client-app/tract.tv client app/tract.tv client app/AppDelegate.swift": [530182514, 0]
