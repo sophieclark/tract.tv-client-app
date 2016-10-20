@@ -78,11 +78,7 @@ class MovieDetailCollectionViewController: UICollectionViewController, UICollect
     switch kind {
     case IOStickyHeaderParallaxHeader:
       let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerCell", for: indexPath) as! MovieDetailHeaderCell
-      cell.loadingIndicator.startAnimating()
-      loadImage(with: movie!.posterImageUrl) { image in
-        cell.moviePosterImageView.image = image
-        cell.loadingIndicator.stopAnimating()
-      }
+      cell.configure(with: movie!)
       return cell
     default:
       assert(false, "Unexpected element kind")
@@ -120,19 +116,4 @@ class MovieDetailCollectionViewController: UICollectionViewController, UICollect
   }
   */
 
-}
-
-extension MovieDetailCollectionViewController {
-  var photoManager: PhotoManager { return .shared }
-  
-  func loadImage(with url: String, completion: @escaping (UIImage) -> Void) -> Image {
-    if let image = photoManager.cachedImage(for: url) {
-      return image
-    }
-    return downloadImage(with: url)
-  }
-  
-  func downloadImage(with url: String) -> Image {
-    return photoManager.retrieveImage(withURL: url) { _ in }
-  }
 }

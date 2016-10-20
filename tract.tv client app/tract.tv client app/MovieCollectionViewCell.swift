@@ -12,6 +12,7 @@ import AlamofireImage
 
 class MovieCollectionViewCell: UICollectionViewCell {
   var photoManager: PhotoManager { return .shared }
+  var tvService: TractTvService { return .shared }
   
   @IBOutlet weak var movieNameLabel: UILabel!
   @IBOutlet weak var yearLabel: UILabel!
@@ -45,10 +46,10 @@ class MovieCollectionViewCell: UICollectionViewCell {
   
   func downloadImage() {
     loadingIndicator.startAnimating()
-    photoManager.retrieveImage(withURL: movie.thumbImageUrl) { image in
+    request = tvService.retrieveImage(for: movie.thumbImageUrl, completion: { image in
       self.movieThumbnail.image = image
       self.loadingIndicator.stopAnimating()
-    }
+    })
     
   }
 }

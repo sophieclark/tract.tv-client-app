@@ -15,6 +15,7 @@ class MovieDetailHeaderCell: UICollectionViewCell {
   @IBOutlet var loadingIndicator: UIActivityIndicatorView!
   
   var photoManager: PhotoManager { return .shared }
+  var tvService: TractTvService { return .shared }
   
   var movie: Movie!
   var request: Request?
@@ -41,10 +42,10 @@ class MovieDetailHeaderCell: UICollectionViewCell {
   
   func downloadImage() {
     loadingIndicator.startAnimating()
-    moviePosterImageView?.image = photoManager.retrieveImage(withURL: movie.posterImageUrl) { image in
+    request = tvService.retrieveImage(for: movie.posterImageUrl, completion: { image in
       self.moviePosterImageView.image = image
       self.loadingIndicator.stopAnimating()
-    }
+    })
     
   }
 

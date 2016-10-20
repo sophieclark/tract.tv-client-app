@@ -12,6 +12,9 @@ import AlamofireImage
 import SwiftyJSON
 
 class TractTvService {
+  
+  static let shared = TractTvService()
+  
   let baseURL = "https://api.trakt.tv/"
   let tracttvApiKey = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"
   
