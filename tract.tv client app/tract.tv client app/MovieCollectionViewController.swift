@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class MovieCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
   
   let reuseIdentifier = "movieListCell"
@@ -18,13 +16,8 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
   override func viewDidLoad() {
     super.viewDidLoad()
     getMovies()
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
-
-    // Register cell classes
-    //self.collectionView!.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-    // Do any additional setup after loading the view.
+    
+    
   }
 
   override func didReceiveMemoryWarning() {
@@ -32,18 +25,28 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
       // Dispose of any resources that can be recreated.
   }
   
-//  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    // Get the new view controller using [segue destinationViewController].
-//    // Pass the selected object to the new view controller.
-//    
-//    
-//  }
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if segue.identifier == "showMovieDetail" {
+        //let cell = sender as! MovieCollectionViewCell
+        if let indexPath = self.collectionView!.indexPath(for: sender as! MovieCollectionViewCell) {
+        let destinationVC = segue.destination as! MovieDetailCollectionViewController
+          destinationVC.movie = movies[indexPath.row]
+        }
+        
+      }
+    
+  }
 
   // MARK: UICollectionViewDataSource
 
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
       // #warning Incomplete implementation, return the number of sections
       return 1
+  }
+  
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let cell = collectionView.cellForItem(at: indexPath) as! MovieCollectionViewCell
+    self.performSegue(withIdentifier: "showMovieDetail", sender: cell)
   }
 
 

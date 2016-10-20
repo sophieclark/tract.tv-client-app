@@ -31,7 +31,7 @@ class PhotoManager {
     return imageCache.image(withIdentifier: url)
   }
   
-  func retrieveImage(withURL url: String) -> Image {
+  func retrieveImage(withURL url: String, completion: @escaping (UIImage) -> Void) -> Image {
     var image = UIImage()
     let request = service.retrieveImage(for: url, completion: { imageResponse in
       self.cache(imageResponse, for: url)

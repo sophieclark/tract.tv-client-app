@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MovieTitleCollectionViewCell"
+provides-nominal:
+- "C19tract_tv_client_app28MovieTitleCollectionViewCell"
+provides-member:
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", ""]
+provides-dynamic-lookup:
+- "titleLabel"
+- "yearLabel"
+depends-top-level:
+- "UILabel"
+- "UICollectionViewCell"
+- "MovieTitleCollectionViewCell"
+depends-member:
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "titleLabel"]
+- ["Ps9AnyObject", "yearLabel"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "titleLabel"]
+- ["PSo15CALayerDelegate", "yearLabel"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "titleLabel"]
+- ["Ps7CVarArg", "yearLabel"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "titleLabel"]
+- ["Ps28CustomDebugStringConvertible", "yearLabel"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "titleLabel"]
+- ["Ps23CustomStringConvertible", "yearLabel"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "titleLabel"]
+- ["Ps9Equatable", "yearLabel"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "titleLabel"]
+- ["Ps8Hashable", "yearLabel"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", "UILabel"]
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", "deinit"]
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", "init"]
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", "titleLabel"]
+- ["C19tract_tv_client_app28MovieTitleCollectionViewCell", "yearLabel"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "titleLabel"]
+- ["PSo8NSCoding", "yearLabel"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "yearLabel"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "titleLabel"]
+- ["PSo16NSObjectProtocol", "yearLabel"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- ["PSo29UIAccessibilityIdentification", "yearLabel"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "titleLabel"]
+- ["PSo12UIAppearance", "yearLabel"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", "yearLabel"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "init"]
+- ["CSo24UICollectionReusableView", "titleLabel"]
+- ["CSo24UICollectionReusableView", "yearLabel"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "deinit"]
+- ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", "titleLabel"]
+- ["CSo20UICollectionViewCell", "yearLabel"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "titleLabel"]
+- ["PSo17UICoordinateSpace", "yearLabel"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "titleLabel"]
+- ["PSo13UIDynamicItem", "yearLabel"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "titleLabel"]
+- ["PSo18UIFocusEnvironment", "yearLabel"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "titleLabel"]
+- ["PSo11UIFocusItem", "yearLabel"]
+- ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "yearLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "titleLabel"]
+- ["PSo30UIResponderStandardEditActions", "yearLabel"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", "yearLabel"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "titleLabel"]
+- ["CSo6UIView", "yearLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "yearLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "titleLabel"]
+- ["Ps9_Hashable", "yearLabel"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "C19tract_tv_client_app28MovieTitleCollectionViewCell"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/IOStickyHeader/IOStickyHeader.framework/Modules/IOStickyHeader.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/IOStickyHeader/IOStickyHeader.framework/Headers/IOStickyHeader-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/IOStickyHeader/IOStickyHeader.framework/Headers/IOStickyHeader-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/IOStickyHeader/IOStickyHeader.framework/Modules/module.modulemap"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/AlamofireImage.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/x86_64.swiftmodule"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
+- "/Users/c2057175/tract.tv-client-app/tract.tv client app/DerivedData/tract.tv client app/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
+interface-hash: "20ea6b4edeb228c2a2d0539754b5ad7e"

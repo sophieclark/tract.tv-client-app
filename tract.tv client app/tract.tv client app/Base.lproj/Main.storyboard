@@ -54,6 +54,7 @@
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-i3-Vkj"/>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fag-U7-b5P">
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -73,11 +74,14 @@
                                     <constraint firstItem="tUo-qg-mAM" firstAttribute="top" secondItem="Fag-U7-b5P" secondAttribute="bottom" constant="-1" id="ROp-Fv-QAJ"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="Unb-ZU-btE" secondAttribute="bottom" constant="-8" id="WYR-fT-hhO"/>
                                     <constraint firstItem="tUo-qg-mAM" firstAttribute="leading" secondItem="55H-ae-Z5I" secondAttribute="leadingMargin" constant="-8" id="WgN-wj-ZSe"/>
+                                    <constraint firstItem="Ug5-i3-Vkj" firstAttribute="centerX" secondItem="Unb-ZU-btE" secondAttribute="centerX" id="bla-rS-i8Q"/>
+                                    <constraint firstItem="Ug5-i3-Vkj" firstAttribute="centerY" secondItem="Unb-ZU-btE" secondAttribute="centerY" id="hzb-9o-JPK"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="Fag-U7-b5P" secondAttribute="trailing" constant="-8" id="iEt-g8-DhI"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <size key="customSize" width="182" height="200"/>
                                 <connections>
+                                    <outlet property="loadingIndicator" destination="Ug5-i3-Vkj" id="F86-Ob-iwP"/>
                                     <outlet property="movieNameLabel" destination="Fag-U7-b5P" id="R9v-KA-A1m"/>
                                     <outlet property="movieThumbnail" destination="Unb-ZU-btE" id="xXL-v3-RLe"/>
                                     <outlet property="yearLabel" destination="tUo-qg-mAM" id="J0q-y6-RB1"/>
@@ -90,10 +94,98 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="RVK-ct-Wnh"/>
+                    <connections>
+                        <segue destination="hm1-gq-S0z" kind="showDetail" identifier="showMovieDetail" id="2oL-4r-sV9"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egy-yI-LzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1024.8" y="-137.18140929535232"/>
+        </scene>
+        <!--Movie Detail Collection View Controller-->
+        <scene sceneID="MYL-mT-xWt">
+            <objects>
+                <collectionViewController id="hm1-gq-S0z" customClass="MovieDetailCollectionViewController" customModule="tract_tv_client_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="RDc-Eq-p0g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="2Lc-wL-Y7s" customClass="IOStickyHeaderFlowLayout" customModule="IOStickyHeader">
+                            <size key="itemSize" width="375" height="361"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movieTitleCell" id="IIF-td-PaL" customClass="MovieTitleCollectionViewCell" customModule="tract_tv_client_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Toy Story 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-W7-9fI">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CY-Qz-AHF">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="leadingMargin" secondItem="J0c-W7-9fI" secondAttribute="leading" id="3g1-mk-9yI"/>
+                                    <constraint firstItem="1CY-Qz-AHF" firstAttribute="leading" secondItem="J0c-W7-9fI" secondAttribute="trailing" constant="8" id="IV7-7W-qtX"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="1CY-Qz-AHF" secondAttribute="trailing" id="MIf-Te-vMp"/>
+                                    <constraint firstItem="1CY-Qz-AHF" firstAttribute="top" secondItem="IIF-td-PaL" secondAttribute="topMargin" constant="15" id="m3J-JD-reA"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="J0c-W7-9fI" secondAttribute="leading" id="mH7-Ds-e29"/>
+                                    <constraint firstItem="J0c-W7-9fI" firstAttribute="top" secondItem="IIF-td-PaL" secondAttribute="topMargin" constant="13" id="p7U-kJ-usj"/>
+                                </constraints>
+                                <size key="customSize" width="375" height="66"/>
+                                <connections>
+                                    <outlet property="titleLabel" destination="J0c-W7-9fI" id="QVt-9V-8PD"/>
+                                    <outlet property="yearLabel" destination="1CY-Qz-AHF" id="DaL-6Y-WsN"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="summaryCell" id="SNH-fh-Ipc" customClass="MovieSummaryCollectionViewCell" customModule="tract_tv_client_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="67" width="375" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overview" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zii-vK-WqM">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Zii-vK-WqM" firstAttribute="leading" secondItem="SNH-fh-Ipc" secondAttribute="leading" constant="8" id="RQy-TV-rvX"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Zii-vK-WqM" secondAttribute="bottom" constant="-8" id="lbs-JS-VZX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zii-vK-WqM" secondAttribute="trailing" constant="8" id="qWL-bc-FCx"/>
+                                    <constraint firstItem="Zii-vK-WqM" firstAttribute="top" secondItem="SNH-fh-Ipc" secondAttribute="topMargin" constant="-8" id="rrh-g9-GBo"/>
+                                </constraints>
+                                <size key="customSize" width="375" height="173"/>
+                                <connections>
+                                    <outlet property="summaryLabel" destination="Zii-vK-WqM" id="LpS-sx-dUh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="hm1-gq-S0z" id="HIF-oN-3np"/>
+                            <outlet property="delegate" destination="hm1-gq-S0z" id="ifu-iy-S8a"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="4tK-Ur-uog"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sag-lq-9YO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2151" y="-137"/>
         </scene>
     </scenes>
 </document>

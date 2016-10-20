@@ -16,6 +16,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var movieNameLabel: UILabel!
   @IBOutlet weak var yearLabel: UILabel!
   @IBOutlet var movieThumbnail: UIImageView!
+  @IBOutlet var loadingIndicator: UIActivityIndicatorView!
   
   var movie: Movie!
   var request: Request?
@@ -31,7 +32,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
   
   func reset() {
     movieThumbnail?.image = nil
-    request?.cancel()
+    //request?.cancel()
   }
   
   func loadImage() {
@@ -43,6 +44,11 @@ class MovieCollectionViewCell: UICollectionViewCell {
   }
   
   func downloadImage() {
-    self.movieThumbnail.image = photoManager.retrieveImage(withURL: movie.thumbImageUrl)
+    loadingIndicator.startAnimating()
+    photoManager.retrieveImage(withURL: movie.thumbImageUrl) { image in
+      self.movieThumbnail.image = image
+      self.loadingIndicator.stopAnimating()
+    }
+    
   }
 }
