@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class MovieCollectionViewModel {
+  let tractService = TractTvService()
+  func getMovies(withSuccess success: @escaping (_ movies: [Movie]) -> Void, withFailure failure: @escaping (_ error: Error) -> Void) {
+    var movies = [Movie]()
+    tractService.getTrendingMovies(withSuccess: { (movie) in
+        success(movie)
+      }, withFailure: { (error) in
+        failure(error)
+    })
+  }
+}

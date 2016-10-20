@@ -2,18 +2,21 @@ PODS:
   - Alamofire (4.0.1)
   - AlamofireImage (3.1.0):
     - Alamofire (~> 4.0)
+  - IOStickyHeader (1.0.0)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireImage (~> 3.1)
+  - IOStickyHeader
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
+  IOStickyHeader: 2636c44a0dd364de1c2b8c7f0e3f2d32de4e3ec3
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: b0b9e063b3ee6584875a092dea6768fcb508b365
+PODFILE CHECKSUM: 34906784d9c0717823e5718230c6e5b662a869db
 
 COCOAPODS: 1.1.0.rc.3

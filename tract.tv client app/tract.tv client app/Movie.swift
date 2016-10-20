@@ -23,14 +23,14 @@ class Movie {
   
   func movieFromJSON(json: JSON) {
     self.watchers = json["watchers"].intValue
-    self.title = json["title"].stringValue
-    self.year = json["year"].intValue
-    self.trakt = json["ids"]["trackt"].intValue
-    self.slug = json["ids"]["slug"].stringValue
-    self.imdb = json["ids"]["imdb"].stringValue
-    self.tmdb = json["ids"]["tmdb"].intValue
-    self.posterImageUrl = json["images"]["poster"]["full"].stringValue
-    self.thumbImageUrl = json["images"]["poster"]["thumb"].stringValue
+    self.title = json["movie"]["title"].stringValue
+    self.year = json["movie"]["year"].intValue
+    self.trakt = json["movie"]["ids"]["trackt"].intValue
+    self.slug = json["movie"]["ids"]["slug"].stringValue
+    self.imdb = json["movie"]["ids"]["imdb"].stringValue
+    self.tmdb = json["movie"]["ids"]["tmdb"].intValue
+    self.posterImageUrl = json["movie"]["images"]["poster"]["full"].stringValue
+    self.thumbImageUrl = json["movie"]["images"]["poster"]["thumb"].stringValue
   }
   
   class func moviesFromJson(json: JSON) -> [Movie] {
@@ -42,4 +42,6 @@ class Movie {
     }
     return movies
   }
+  
+  
 }
