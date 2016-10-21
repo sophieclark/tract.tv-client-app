@@ -8,12 +8,15 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 import SwiftyJSON
 
 class TractTvService {
+  
+  static let shared = TractTvService()
+  
   let baseURL = "https://api.trakt.tv/"
   let tracttvApiKey = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"
-  let fanartTVApiKey = "ed99242c8446dbd2375927a338f6969d"
   
   private func GET(url: String, parameters: [String:AnyObject]?, success: @escaping (_ response: JSON) -> Void, failure: @escaping (_ error: Error) -> Void) {
     var headers: [String:String] = [:]
@@ -32,6 +35,7 @@ class TractTvService {
   }
   
   func getTrendingMovies(withSuccess success: @escaping (_ movies: [Movie]) -> Void, withFailure failure: @escaping (_ error: Error) -> Void) {
+    
     let url = baseURL + "movies/trending"
     
     var params = [String:AnyObject]()
@@ -43,5 +47,12 @@ class TractTvService {
       let movies = Movie.moviesFromJson(json: response)
       success(movies)
       }, failure: failure)
+  }
+  
+  func retrieveImage(for url: String, completion: @escaping (UIImage) -> Void) -> Request {
+    return Alamofire.request(url, method: .get).responseImage { response in
+      guard let image = response.result.value else { return }
+      completion(image)
+    }
   }
 }

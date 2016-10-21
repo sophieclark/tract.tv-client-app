@@ -20,6 +20,6 @@ class TractTVServiceTests: XCTestCase {
     super.tearDown()
   }
   
-  func test
+  func test(){}
     
 }

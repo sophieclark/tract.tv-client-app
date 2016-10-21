@@ -1,5 +1,0 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "7912696b65198fc6f5f054afdd8d5420"
-build_time: [530198135, 118131000]
-inputs:
-  "/Users/c2057175/tract.tv-client-app/tract.tv client app/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [530187320, 0]

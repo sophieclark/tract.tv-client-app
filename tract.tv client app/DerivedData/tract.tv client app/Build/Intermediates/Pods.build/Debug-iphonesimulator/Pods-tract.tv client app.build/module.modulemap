@@ -1,6 +1,0 @@
-framework module Pods_tract_tv_client_app {
-  umbrella header "Pods-tract.tv client app-umbrella.h"
-
-  export *
-  module * { export * }
-}
