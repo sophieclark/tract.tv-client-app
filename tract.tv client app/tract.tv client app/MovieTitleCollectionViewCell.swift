@@ -11,4 +11,6 @@ import UIKit
 class MovieTitleCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var yearLabel: UILabel!
+  @IBOutlet weak var summaryLabel: UILabel!
+  @IBOutlet weak var ratingLabel: UILabel!
 }

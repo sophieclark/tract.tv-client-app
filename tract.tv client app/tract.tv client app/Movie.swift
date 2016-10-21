@@ -13,6 +13,7 @@ class Movie {
   var watchers: Int = 0
   var title: String = ""
   var year: Int = 0
+  var rating: String = ""
   var trakt: Int = 0
   var slug: String = ""
   var imdb: String = ""
@@ -25,10 +26,12 @@ class Movie {
     self.watchers = json["watchers"].intValue
     self.title = json["movie"]["title"].stringValue
     self.year = json["movie"]["year"].intValue
+    self.rating = json["movie"]["certification"].stringValue
     self.trakt = json["movie"]["ids"]["trackt"].intValue
     self.slug = json["movie"]["ids"]["slug"].stringValue
     self.imdb = json["movie"]["ids"]["imdb"].stringValue
     self.tmdb = json["movie"]["ids"]["tmdb"].intValue
+    self.overview = json["movie"]["overview"].stringValue
     self.posterImageUrl = json["movie"]["images"]["poster"]["full"].stringValue
     self.thumbImageUrl = json["movie"]["images"]["poster"]["thumb"].stringValue
   }

@@ -63,12 +63,15 @@ class MovieDetailCollectionViewController: UICollectionViewController, UICollect
     case 0:
       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieTitleCell", for: indexPath) as! MovieTitleCollectionViewCell
       cell.titleLabel.text = movie?.title
-      cell.yearLabel.text = "\(movie?.year)"
-      return cell
-    case 1:
-      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "summaryCell", for: indexPath) as! MovieSummaryCollectionViewCell
+      cell.yearLabel.text = "\(movie!.year)"
       cell.summaryLabel.text = movie?.overview
+      cell.ratingLabel.text = movie?.rating
       return cell
+    //bug in IOStickyHeader meaning you can only have one cell or it crashes!
+//    case 1:
+//      let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "summaryCell", for: indexPath) as! MovieSummaryCollectionViewCell
+//      cell.summaryLabel.text = movie?.overview
+//      return cell
     default:
       return UICollectionViewCell()
     }
