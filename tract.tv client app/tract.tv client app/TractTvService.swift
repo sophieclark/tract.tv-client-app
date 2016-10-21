@@ -11,14 +11,21 @@ import Alamofire
 import AlamofireImage
 import SwiftyJSON
 
-class TractTvService {
+protocol TractTvServiceProtocol {
+  func GET(url: String, parameters: [String:AnyObject]?, success: @escaping (_ response: JSON) -> Void, failure: @escaping (_ error: Error) -> Void)
+  func getTrendingMovies(withSuccess success: @escaping (_ movies: [Movie]) -> Void, withFailure failure: @escaping (_ error: Error) -> Void)
+  func retrieveImage(for url: String, completion: @escaping (UIImage) -> Void) -> Request
+  
+}
+
+class TractTvService: TractTvServiceProtocol {
   
   static let shared = TractTvService()
   
   let baseURL = "https://api.trakt.tv/"
   let tracttvApiKey = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"
   
-  private func GET(url: String, parameters: [String:AnyObject]?, success: @escaping (_ response: JSON) -> Void, failure: @escaping (_ error: Error) -> Void) {
+  internal func GET(url: String, parameters: [String:AnyObject]?, success: @escaping (_ response: JSON) -> Void, failure: @escaping (_ error: Error) -> Void) {
     var headers: [String:String] = [:]
     headers["trakt-api-version"] = "2"
     headers["trakt-api-key"] = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"

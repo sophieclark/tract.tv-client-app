@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "summaryLabel"
 depends-top-level:
+- "MovieSummaryCollectionViewCell"
 - "UICollectionViewCell"
 - "UILabel"
-- "MovieSummaryCollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "summaryLabel"]
