@@ -23,7 +23,7 @@ class MovieTests: XCTestCase {
   
   func testMoviesFromJSONReturnsResults() {
     let testBundle = Bundle(for: type(of: self))
-    let filepath = testBundle.path(forResource: "testMovies", ofType: "txt")
+    let filepath = testBundle.path(forResource: "testMovies", ofType: "json")
     let data = NSData(contentsOfFile: filepath!)
     let json = JSON(data: data! as Data)
     
