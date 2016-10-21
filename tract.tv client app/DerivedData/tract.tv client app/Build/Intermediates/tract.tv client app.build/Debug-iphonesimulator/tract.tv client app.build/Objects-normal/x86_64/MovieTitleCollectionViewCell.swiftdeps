@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C19tract_tv_client_app28MovieTitleCollectionViewCell", ""]
 provides-dynamic-lookup:
+- "ratingLabel"
+- "yearLabel"
 - "titleLabel"
 - "summaryLabel"
-- "yearLabel"
-- "ratingLabel"
 depends-top-level:
+- "MovieTitleCollectionViewCell"
 - "UILabel"
 - "UICollectionViewCell"
-- "MovieTitleCollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "ratingLabel"]
