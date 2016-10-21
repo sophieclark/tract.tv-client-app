@@ -77,7 +77,12 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
       self.movies = movie
       self.collectionView?.reloadData()
       }, withFailure: { (error) in
-        //show alert
+        let alertController = UIAlertController(title: "Unable to get movies", message: "Unable to get movies. Error: \(error)", preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
+          print("OK")
+        }
+        alertController.addAction(okAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
     })
   }
 
